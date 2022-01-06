@@ -32,7 +32,9 @@ export function removeItem(array, index) {
 //     updateName({ name: "Abe" }, "Barbara")
 // should give back:
 //     { name: "Barbara"}
-export function updateName(object, newName) {}
+export function updateName(object, newName) {
+  return { ...object, name: newName }
+}
 
 // Immutably update the object so that the value under the "needsACupOfTea" property becomes the opposite of what it was.
 // Any other properties in the object should be maintained.
@@ -40,7 +42,7 @@ export function updateName(object, newName) {}
 //     toggleTeaStatus({ name: "Abe", needsACupOfTea: false })
 // should give back:
 //     { name: "Abe", needsACupOfTea: true }
-export function toggleTeaStatus(object) {}
+export function toggleTeaStatus(object) { }
 
 // Combo Time!!
 

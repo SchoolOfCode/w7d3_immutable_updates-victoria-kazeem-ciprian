@@ -77,22 +77,22 @@ describe("removeItem", function () {
     expect(actual).toEqual(expected);
   });
 });
-// describe("updateName", function () {
-//   it("should not mutate the original object", function () {
-//     const user = { name: "Lambert", age: 99, height: "6ft" };
-//     const actual = fn.updateName(user, "Lammy");
-//     expect(user).toEqual({ name: "Lambert", age: 99, height: "6ft" });
-//     expect(actual).not.toBe(user);
-//   });
-//   it("should updateName", function () {
-//     const expected = { name: "Lammy", age: 99, height: "6ft" };
-//     const actual = fn.updateName(
-//       { name: "Lambert", age: 99, height: "6ft" },
-//       "Lammy"
-//     );
-//     expect(actual).toEqual(expected);
-//   });
-// });
+describe("updateName", function () {
+  it("should not mutate the original object", function () {
+    const user = { name: "Lambert", age: 99, height: "6ft" };
+    const actual = fn.updateName(user, "Lammy");
+    expect(user).toEqual({ name: "Lambert", age: 99, height: "6ft" });
+    expect(actual).not.toBe(user);
+  });
+  it("should updateName", function () {
+    const expected = { name: "Lammy", age: 99, height: "6ft" };
+    const actual = fn.updateName(
+      { name: "Lambert", age: 99, height: "6ft" },
+      "Lammy"
+    );
+    expect(actual).toEqual(expected);
+  });
+});
 
 // describe("toggleTeaStatus", function () {
 //   it("should not mutate the original object", function () {
