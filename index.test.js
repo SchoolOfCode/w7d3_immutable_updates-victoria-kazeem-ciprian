@@ -94,29 +94,31 @@ describe("updateName", function () {
   });
 });
 
-// describe("toggleTeaStatus", function () {
-//   it("should not mutate the original object", function () {
-//     const user = { name: "Ben", needsACupOfTea: true };
-//     const actual = fn.toggleTeaStatus(user);
-//     expect(user).toEqual({ name: "Ben", needsACupOfTea: true });
-//     expect(actual).not.toBe(user);
-//   });
-//   it("should toggle tea status to true", function () {
-//     const expected = { name: "Ben", needsACupOfTea: true };
-//     const actual = fn.toggleTeaStatus({ name: "Ben", needsACupOfTea: false });
-//     expect(actual).toEqual(expected);
-//   });
-//   it("should toggle tea status to false", function () {
-//     const expected = { name: "Ben", needsACupOfTea: false };
-//     const actual = fn.toggleTeaStatus({ name: "Ben", needsACupOfTea: true });
-//     expect(actual).toEqual(expected);
-//   });
-//   it("should toggle tea status", function () {
-//     const expected = { name: "Ben", needsACupOfTea: true };
-//     const actual = fn.toggleTeaStatus({ name: "Ben", needsACupOfTea: false });
-//     expect(actual).toEqual(expected);
-//   });
-// });
+describe("toggleTeaStatus", function () {
+  it("should not mutate the original object", function () {
+    const user = { name: "Ben", needsACupOfTea: true };
+    const actual = fn.toggleTeaStatus(user);
+    expect(user).toEqual({ name: "Ben", needsACupOfTea: true });
+    expect(actual).not.toBe(user);
+  });
+  it("should toggle tea status to true", function () {
+    const expected = { name: "Ben", needsACupOfTea: true };
+    const actual = fn.toggleTeaStatus({ name: "Ben", needsACupOfTea: false });
+    expect(actual).toEqual(expected);
+  });
+  it("should toggle tea status to false", function () {
+    const expected = { name: "Ben", needsACupOfTea: false };
+    const actual = fn.toggleTeaStatus({ name: "Ben", needsACupOfTea: true });
+    expect(actual).toEqual(expected);
+  });
+  it("should toggle tea status", function () {
+    const expected = { name: "Ben", needsACupOfTea: true };
+    const actual = fn.toggleTeaStatus({ name: "Ben", needsACupOfTea: false });
+    expect(actual).toEqual(expected);
+  });
+});
+
+
 // describe("toggleListItemCompleted", function () {
 //   it("should not mutate the original array or nested object", function () {
 //     const index = 0;
