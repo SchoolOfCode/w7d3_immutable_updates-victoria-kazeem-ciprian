@@ -119,53 +119,53 @@ describe("toggleTeaStatus", function () {
 });
 
 
-// describe("toggleListItemCompleted", function () {
-//   it("should not mutate the original array or nested object", function () {
-//     const index = 0;
-//     const list = [
-//       { task: "Do washing up", completed: false },
-//       { task: "Do code wars", completed: false },
-//       { task: "Send post card", completed: false },
-//     ];
-//     const actual = fn.toggleListItemCompleted(list, index);
-//     expect(list).toEqual([
-//       { task: "Do washing up", completed: false },
-//       { task: "Do code wars", completed: false },
-//       { task: "Send post card", completed: false },
-//     ]);
-//     expect(actual).not.toBe(list);
-//     expect(actual[index]).not.toBe(list[index]);
-//   });
-//   it("should toggle completed to true", function () {
-//     const expected = [
-//       { task: "Do washing up", completed: true },
-//       { task: "Do code wars", completed: false },
-//       { task: "Send post card", completed: false },
-//     ];
-//     const actual = fn.toggleListItemCompleted(
-//       [
-//         { task: "Do washing up", completed: false },
-//         { task: "Do code wars", completed: false },
-//         { task: "Send post card", completed: false },
-//       ],
-//       0
-//     );
-//     expect(actual).toEqual(expected);
-//   });
-//   it("should toggle completed to false", function () {
-//     const expected = [
-//       { task: "Do washing up", completed: false },
-//       { task: "Do code wars", completed: false },
-//       { task: "Send post card", completed: false },
-//     ];
-//     const actual = fn.toggleListItemCompleted(
-//       [
-//         { task: "Do washing up", completed: false },
-//         { task: "Do code wars", completed: true },
-//         { task: "Send post card", completed: false },
-//       ],
-//       1
-//     );
-//     expect(actual).toEqual(expected);
-//   });
-// });
+describe("toggleListItemCompleted", function () {
+  it("should not mutate the original array or nested object", function () {
+    const index = 0;
+    const list = [
+      { task: "Do washing up", completed: false },
+      { task: "Do code wars", completed: false },
+      { task: "Send post card", completed: false },
+    ];
+    const actual = fn.toggleListItemCompleted(list, index);
+    expect(list).toEqual([
+      { task: "Do washing up", completed: false },
+      { task: "Do code wars", completed: false },
+      { task: "Send post card", completed: false },
+    ]);
+    expect(actual).not.toBe(list);
+    expect(actual[index]).not.toBe(list[index]);
+  });
+  it("should toggle completed to true", function () {
+    const expected = [
+      { task: "Do washing up", completed: true },
+      { task: "Do code wars", completed: false },
+      { task: "Send post card", completed: false },
+    ];
+    const actual = fn.toggleListItemCompleted(
+      [
+        { task: "Do washing up", completed: false },
+        { task: "Do code wars", completed: false },
+        { task: "Send post card", completed: false },
+      ],
+      0
+    );
+    expect(actual).toEqual(expected);
+  });
+  it("should toggle completed to false", function () {
+    const expected = [
+      { task: "Do washing up", completed: false },
+      { task: "Do code wars", completed: false },
+      { task: "Send post card", completed: false },
+    ];
+    const actual = fn.toggleListItemCompleted(
+      [
+        { task: "Do washing up", completed: false },
+        { task: "Do code wars", completed: true },
+        { task: "Send post card", completed: false },
+      ],
+      1
+    );
+    expect(actual).toEqual(expected);
+  });
+});
